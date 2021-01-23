@@ -1,0 +1,492 @@
+
+<script>
+document.cookie = "utcOffset = "; // clear cookie
+var timezone_offset_hours = new Date().getTimezoneOffset();
+timezone_offset_hours = (timezone_offset_hours == 0 ? 0 : -timezone_offset_hours)/60;
+
+// Timezone difference in minutes such as 330 or -360 or 0
+console.log(timezone_offset_hours);
+document.cookie = "utcOffset = " + timezone_offset_hours;
+</script>
+
+
+  <div style="background-color: rgba(151,211,252,0.23); padding: 10px">
+        <div class="ui list">
+            <div class="item">
+                <div class="content">
+                   <div class="header">Times Are Shown in UK local time</div>
+                </div>
+            </div>
+        </div>
+  </div>
+<br>
+
+
+
+<!--<div class="ui large header">
+    Workshop Programme<br>
+    <br>
+    <div class="sub header" style="font-size: 0.6em">
+        <a href="https://notredame.zoom.us/j/93215123088" target="_blank">
+            <button class="ui mini orange button">
+                <i class="map marker alternate icon"></i>
+                Zoom Meeting Link
+            </button>
+        </a>
+    </div>
+</div>-->
+
+
+<!--
+<table class="ui single line mini table">
+    <thead>
+    <tr>
+        <th class="two wide">Time</th>
+        <th>Event</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr style="background-color: rgba(0,0,255,0.23)">
+                <td> <div class="header">DAY ONE</div></td>
+                <td>
+                    <div class="ui list">
+                        <div class="item">
+                            <div class="content">
+                               Wednesday, June 10th 2020
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+
+    <tr>
+        <td><?php t(12)?>:00&mdash;<?php t(12)?>:20</td>
+        <td>
+            <div class="ui list">
+                <div class="item">
+                    <div class="header">Welcome</div>
+                    Sandra Gesing, Iain Barclay, Ian Taylor
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr style="background-color: rgba(151,211,252,0.23)">
+        <td><?php t(12)?>:20&mdash;<?php t(12)?>:40</td>
+        <td>
+            <div class="ui list">
+                <div class="item">
+                    <div class="header">Keynote: Alun Preece</div>
+                    <div class="ui accordion">
+                        <div class="title">
+                            <i class="dropdown icon"></i>Hows and Whys of AI+Human Collaboration: Explanation and Evaluation</a>
+                        </div>
+                        <div class="content">
+                            <p class="transition hidden">
+                            Evaluation has always been a key challenge in the development of artificial intelligence (AI) based software, due to the technical complexity of the software artifact and, often, its embedding in complex human+machine decision-making processes. Recent advances in machine learning (ML) enabled by deep neural networks has exacerbated the challenge of evaluating such software due to the opaque nature of these ML-based artifacts. A key related issue is the (in)ability of such systems to generate useful explanations of their outputs, and we argue that the explanation and evaluation problems are closely linked. The paper models the elements of a ML-based AI system in the context of applications involving both artificial and human intelligence, and maps these elements against issues in both evaluation and explanation, showing how the two are related. In particular, this talk will consider emerging applications, opportunities and challenges of AI+human collaboration in the context of science gateways.
+                            <br><br>
+
+                            Prof Alun Preece is Co-Director of Cardiff University's Crime & Security Research Institute and Deputy Head of the School of Computer Science and Informatics. He is the UK Academic Technical Area Lead for the US/UK Distributed Analytics and Information Sciences International Technology Alliance (DAIS ITA, 2016-2026) funded by the US & UK Governments and led by IBM, in which he also leads research in Anticipatory Situational Understanding involving a team from Airbus, BAE Systems, IBM, UCL, and UCLA. Previously, he served in the same role for the Network and Information Sciences International Technology Alliance (NIS ITA, 2006-2016).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr class="active">
+        <td colspan="3"><strong>Infrastructure and Scalability (Chair Ian Taylor) </strong></td>
+    </tr>
+    <tr>
+        <td><?php t(12)?>:40&mdash;<?php t(1)?>:00</td>
+        <td>
+            <div class="ui list">
+                <div class="item">
+                        <div class="header">Industry Simulation Gateway on a Scalable Cloud</div>
+                        <b>Jozsef Kovacs</b>, Tamas Kiss, Simon J. E. Taylor, Attila Farkas, Anastasia Anagnostou, Gary Pattison, Mark Emodi, Shane Kite, James Petry, George Snookes, Peter Kacsuk and Robert Lovas.
+                        <div class="ui accordion">
+                        <div class="title">
+                            <i class="dropdown icon"></i>Abstract</a>
+                        </div>
+                        <div class="content">
+                            <p class="transition hidden">
+                            Large scale simulation experimentation typically requires significant computational resources due to an excessive number of simulation runs and replications to be performed. The traditional approach to provide such computational power, both in academic research and industry/business applications, was to use computing clusters or desktop grid resources. However, such resources not only require upfront capital investment but also lack the flexibility and scalability that is required to serve a variable number of clients/users efficiently. This paper presents how SakerGrid, a commercial desktop grid based simulation platform and its associated science gateway have been extended towards a scalable cloud computing solution. The integration of SakerGrid with the MiCADO automated deployment and autoscaling framework supports the execution of multiple simulation experiments by dynamically allocating virtual machines in the cloud in order to complete the experiment by a user-defined deadline.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td><?php t(1)?>:00&mdash;<?php t(1)?>:20</td>
+        <td>
+            <div class="ui list">
+                <div class="item">
+                    <div class="header">Towards Smart and Safe Construction with DECENTER’s Fog Computing Platform</div>
+                    Janez Brežnik, <b>Petar Kochovski</b>, Jaewon Moon and Vlado Stankovski.
+                    <div class="ui accordion">
+                        <div class="title">
+                            <i class="dropdown icon"></i>Abstract</a>
+                        </div>
+                        <div class="content">
+                            <p class="transition hidden">
+                            In the course of every building project, it is necessary to address a number of complex problems and issues falling under the broad categories of safety at work, construction site management, management of resources, waste and assets, construction progress monitoring and early (disaster) warning. These problems can be addressed by implementing innovative smart applications that rely on the Internet of Things (IoT), Artificial Intelligence (AI), Cloud-to-Edge computing, Blockchain and Smart Contracts. However, using these technologies to build smart applications is currently still a very complex process for smart site designers, such as architects. The new DECENTER Fog Computing and Brokerage Platform is designed to bridge this gap, and ease the process of smart applications development. It facilitates the development of AI Microservice-based applications, and relies on an orchestrator, and underlying probabilistic algorithms designed to achieve high Quality of Service (QoS). In this study we investigate the DECENTER’s process for smart application development, including the actual, real-world smart environment setup that includes cameras and sensors on the ground, potential actors, such as construction workers and visitors and objects, such as building equipment, waste, materials and so on, so that data and information can be collected and information, signalisation and notifications can be provided through the use of smartphones, digital signalisation and actuators.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+
+        <tr>
+            <td><?php t(1)?>:20&mdash;<?php t(1)?>:40</td>
+            <td>
+                <div class="ui list">
+                    <div class="item">
+                        <div class="header">Toward Interoperable Cyberinfrastructure: Common Descriptions for Computational Resources and Applications</div>
+                        <b>Joe Stubbs</b>, Steve Black, Maytal Dahan, Suresh Marru, Marlon Pierce, Daniel Mejia, Daniel S. Katz, Kyle Chard and Michael Zentner.
+                        <div class="ui accordion">
+                            <div class="title">
+                                <i class="dropdown icon"></i>Abstract</a>
+                            </div>
+                            <div class="content">
+                                <p class="transition hidden">
+                                The Cyberinfrastructure (CI) ecosystem consists of computing and data systems, advanced instruments, visualization environments and people. Science Gateways, also known as vir- tual labs or virtual research environments, provide user-centric solutions that ease the use of complex CI. Common to virtually all computational enabling CI components such as science gateways and scientific workflow systems is the use of physical resources (storage systems and execution environments) to manage data and execute codes (applications), yet there is no uniform way of describing either the resources or the applications. Unfortunately, interoperability across these components remains poor. Thus, CI components end up inventing their own semantics for describing them, build their own catalogs of them, and then couple the component to their proprietary descriptions. This approach leads to needlessly repetitive work on the part of CI developers and users, while simultaneously rendering the components themselves less interoperable. In this paper, we propose tackling this inter- operability problem by defining uniform semantics for describing resources and applications. After motivating the effort through a brief discussion of a number of popular CI components, we sketch a solution to the problem of a common description and catalog of resources: we describe an approach to implementing a resource registry for use by the community and discuss potential approaches to some long-term challenges. We conclude by looking ahead to the application description language, which could be tackled in earnest in a future work.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+    <tr>
+        <td><?php t(1)?>:40&mdash;<?php t(1)?>:50</td>
+        <td>
+            <div class="ui list">
+                <div class="item">
+                    <div class="header">Abstract : Abaco - A Modern Platform for High Throughput Parallel Scientific Computations</div>
+                    <b>Christian Garcia</b>, Joe Stubbs, Julia Looney, Anagha Jamthe, Mike Packard and Kreshel Nguyen.
+                </div>
+            </div>
+        </td>
+    </tr>
+
+
+        <tr class="warning">
+            <td><?php t(1)?>:50&mdash;<?php t(2)?>:20</td>
+            <td>
+                <div class="ui list">
+                    <div class="item">
+                        <i class="coffee icon"></i>
+                        <div class="content">
+                            <div class="header">Coffee Break</div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+
+    <tr style="background-color: rgba(151,211,252,0.23)">
+        <td><?php t(2)?>:20&mdash;<?php t(2)?>:40</td>
+        <td>
+            <div class="ui list">
+                <div class="item">
+                    <div class="header">Keynote: Jarek Nabrzyski</div>
+                    <div class="ui accordion">
+                        <div class="title">
+                            <i class="dropdown icon"></i>Beyond Traditional Research Computing</a>
+                        </div>
+                        <div class="content">
+                            <p class="transition hidden">
+                            In his talk, Nabrzyski discusses various models for supporting science through computation and technology. He starts with traditional models of research computing centers and then moves to and focuses more on more advanced models that are similar to national supercomputing centers' models. Nabrzyski will show how science gateways and related technologies advance traditional research computing support functions and will present several examples of projects where a holistic approach to supporting science adds value to researchers and minimizes time to scientific results.
+                            <br/><br/>
+                            Jarek Nabrzyski is the founding director of the Center for Research Computing and a concurrent professor in the Department of Computer Science and Engineering at the University of Notre Dame. Since 2016 Nabrzyski has been also overseeing the operations of the Center for Social Science Research at Notre Dame. His research is focused on resource management in distributed and exascale computing systems as well as blockchain distributed applications. He enjoys building and managing teams and engaging in complex science and industry collaborations.  Before joining Notre Dame in 2009, Nabrzyski was the executive director of the Center for Computation and Technology at the Louisiana State University, and, before that, he was the Scientific Applications Department manager at Poznan Supercomputing and Networking Center.  Nabrzyski is involved in several Notre Dame startups, such as SimbaChain, Sciath FinTech (founding member) and Digital Leader Academy, Delive, and FloWaste (advisor).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr class="active">
+        <td colspan="3"><strong>Biomedical (Chair Iain Barclay)</strong></td>
+    </tr>
+
+    <tr>
+        <td><?php t(2)?>:40&mdash;<?php t(2)?>:50</td>
+        <td>
+            <div class="ui list">
+                <div class="item">
+                    <div class="header">Abstract : A Gateway for the BioDATEN Science Data Center</div>
+                    Jonathan Bauer, Holger Gauza, Steve Kaminski, <b>Jens Krüger</b>, Dirk von Suchodoletz and Fabian Wannenmacher.
+                </div>
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td><?php t(2)?>:50&mdash;<?php t(3)?>:00</td>
+        <td>
+            <div class="ui list">
+                <div class="item">
+                    <div class="header">Abstract : Coral - Unified Computing Framework for Accelerated Drug Discovery and Research</div>
+                    <b>David Ojika</a>.
+                </div>
+            </div>
+        </td>
+    </tr>
+
+
+    <tr style="background-color: rgba(251,111,152,0.23)">
+             <td><?php t(3)?>:00&mdash;<?php t(4)?>:00</td>
+             <td>
+                 <div class="ui list">
+                     <div class="item">
+                         <i class="cocktail icon"></i>
+                         <div class="content">
+                             <div class="header">Social Event</div>
+                         </div>
+                     </div>
+                 </div>
+             </td>
+             <td></td>
+         </tr>
+
+   </tbody>
+</table>
+
+
+
+<! DAY TWO !!!!>
+
+<table class="ui single line mini table">
+    <thead>
+    <tr>
+        <th class="two wide">Time</th>
+        <th>Event</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+
+   <tr style="background-color: rgba(0,0,255,0.23)">
+                <td> <div class="header">DAY TWO</div></td>
+                <td>
+                    <div class="ui list">
+                        <div class="item">
+                            <div class="content">
+                               Thursday, June 11th 2020
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+
+
+          <tr>
+        <td><?php t(12)?>:00&mdash;<?php t(12)?>:10</td>
+        <td>
+            <div class="ui list">
+                <div class="item">
+                    <div class="header">Prior Day Recap</div>
+                    Iain Barclay, Sandra Gesing, Ian Taylor
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr style="background-color: rgba(151,211,252,0.23)">
+        <td><?php t(12)?>:10&mdash;<?php t(12)?>:30</td>
+        <td>
+            <div class="ui list">
+                <div class="item">
+                    <div class="header">Keynote: Tamas Kiss</div>
+                    <div class="ui accordion">
+                        <div class="title">
+                            <i class="dropdown icon"></i>Scalable and Secure Cloud Resources Supporting Science Gateways</a>
+                        </div>
+                        <div class="content">
+                            <p class="transition hidden">
+                            Cloud computing offers resources on-demand and without large capital investments. As such, it is extremely attractive to many industry and scientific application areas that require large computation and storage facilities and it has become the major computing resource behind current science gateways. However, many end users are still struggling to get the full benefits from using the elastic nature of the cloud. Major factors prohibiting wider take-up and efficient utilisation of cloud technologies include limited automated elasticity/scalability of resources at the level of cloud applications, fear of potential vendor lock-in by depending on one particular cloud technology, and increased security concerns imposed by the third party provisioning model and the technology itself. This keynote presentation will provide an overview of such challenges facing end users when utilising cloud resources via science gateways. Through the examples of current and recent European research projects it will present possible solutions for the problems of automated application deployment, dynamic scalability and enhanced security. 
+                            <br/><br/>
+                            Tamas Kiss is a Professor of Distributed Computing at the School of Computer Science and Engineering, Director of the Research Centre for Parallel Computing at the University of Westminster, and Editor in Chief of the Journal of Grid Computing published by Springer Nature. He has attracted over £30 Million research funding and has been leading national and European research projects related to scientific and enterprise applications of cloud computing technologies. He has been involved in the science gateway research community for over a decade and was a main contributor to the WS-PGRADE Science Gateway Framework and its related technologies. Ha has also chaired three previous IWSG workshops. Between 2013 and 2016 he acted as project director and scientific coordinator for the European CloudSME (Cloud-based Simulation Platform for Manufacturing and Engineering) project that developed a Cloud-based simulation solution for manufacturing and engineering SMEs. He is Chair of the Scientific Advisory Board of CloudSME UG, a start-up that has been established by ten European stakeholders to exploit the results of the CloudSME project. Recently he led the EU H2020 COLA (Cloud Orchestration at the Level of Application) project that investigated how a generic and pluggable framework that supports the optimal and secure deployment and run-time orchestration of cloud applications can be created. Currently, he is  a member of the Executive Board and Coordinator of Application Experiments in the EU H2020 CloudiFacturing (Cloudification of Production Engineering for Predictive Digital Manufacturing) project that brings and progresses advanced information and communications technology in the field of cloud-based modelling and simulation, data analytics for online factory data, and real-time support to European manufacturing SMEs. Since December 2018 he is also Project Coordinator for the EU H2020 ASCLEPIOS project that focuses on secure and scalable cloud applications in healthcare.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr class="active">
+        <td colspan="3"><strong>Research and Tools I (Chair Sandra Gesing)</strong></td>
+    </tr>
+    <tr>
+        <td><?php t(12)?>:30&mdash;<?php t(12)?>:50</td>
+        <td>
+            <div class="ui list">
+                <div class="item">
+                    <div class="header">Co-creation of Virtual Research Environments: the D4Science Experience</div>
+                    Massimiliano Assante, <b>Leonardo Candela</b>, Donatella Castelli, Roberto Cirillo, Gianpaolo Coro, Andrea Dell'Amico, Luca Frosini, Lucio Lelii, Chiara Magliozzi, Francesco Mangiacrapa, Pasquale Pagano, Giancarlo Panichi, Tommaso Piccioli and Fabio Sinibaldi.
+                    <div class="ui accordion">
+                            <div class="title">
+                                <i class="dropdown icon"></i>Abstract</a>
+                            </div>
+                            <div class="content">
+                                <p class="transition hidden">
+                                Virtual research environments are systems called to serve the needs of their designated communities of practice. Every community of practice is a group of people dynamically aggregated by the willingness to collaborate to address a given research question. The development of such a typology of system thus to guarantee its uptake from the community of practice is a challenging task. In this paper, we advocate how the co-creation driven approach promoted by D4Science proven to be effective. In particular, we present the co-creation options supported, discuss how these options have been exploited by diverse communities of practice and give some usage indicators on the so created VREs. 
+                             </p>
+                             </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td><?php t(12)?>:50&mdash;<?php t(1)?>:10</td>
+        <td>
+            <div class="ui list">
+                <div class="item">
+                    <div class="header">Certifying Provenance of Scientific Datasets with Self-sovereign Identity and Verifiable Credentials</div>
+                    <b>Iain Barclay</b>, Swapna Radha, Alun Preece, Ian Taylor and Jarek Nabrzyski.
+                    <div class="ui accordion">
+                            <div class="title">
+                                <i class="dropdown icon"></i>Abstract</a>
+                            </div>
+                            <div class="content">
+                                <p class="transition hidden">
+                                In order to increase the value of scientific datasets and improve research outcomes, it is important that only trust- worthy data is used. This paper introduces mechanisms by which scientists and the organisations they represent can certify the authenticity of characteristics and provenance of published datasets so that secondary users can inspect and gain confidence in the qualities of data sources. By drawing on data models and protocols emerging to provide self-sovereign ownership of identity and personal data to individuals, we conclude that providing self-sovereignty to digital assets offers a promising approach for institutions to certify qualities of their datasets in a cryptographically secure manner, and enables secondary data users to efficiently perform verification of the authenticity of such certifications. By building upon emerging standards for decentralized identification and cryptographically verifiable credentials, we envisage an infrastructure of interoperable tools being developed to foster improvements in the quality of infor- mation provided in support of shared data assets.
+                                </p> 
+                           </div>
+                    </div>
+            </div>
+        </td>
+    </tr>
+
+        <tr>
+            <td><?php t(1)?>:10&mdash;<?php t(1)?>:20</td>
+            <td>
+                <div class="ui list">
+                    <div class="item">
+                        <div class="header">Abstract : SWIRRL - Software for Interactive andReproducible Research Labs</div>
+                        <b>Alessandro Spinuso</b>, Ian van der Neut, Hans Verhoef, Saskia Wagenaar and Friedrich Striewski.
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+
+        <tr class="warning">
+            <td><?php t(1)?>:20&mdash;<?php t(1)?>:40</td>
+            <td>
+                <div class="ui list">
+                    <div class="item">
+                        <i class="coffee icon"></i>
+                        <div class="content">
+                            <div class="header">Coffee Break</div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+
+
+
+    <tr class="active">
+        <td colspan="3"><strong>Research and Tools II (Chair Ian Taylor)</strong></td>
+    </tr>
+    <tr>
+        <td><?php t(1)?>:40&mdash;<?php t(2)?>:00</td>
+        <td>
+            <div class="ui list">
+                <div class="item">
+                    <div class="header"> Science Gateways with Embedded Ontology-based E-learning Support</div>
+                    Tamas Kiss, <b>Alexander Bolotov</b>, Gabriele Pierantoni, James Deslauriers, Abdelkhalik Mosa, Dimitrios Kagialis, Gabor Terstyanszky and David Chan.
+                    <div class="ui accordion">
+                            <div class="title">
+                                <i class="dropdown icon"></i>Abstract</a>
+                            </div>
+                            <div class="content">
+                                <p class="transition hidden">
+                                Science gateways are widely utilised in a range of scientific disciplines to provide user-friendly access to complex distributed computing infrastructures. The traditional approach in science gateway development is to concentrate on this simplified resource access and provide scientists with a graphical user interface to conduct their experiments and visualise the results. However, as user communities behind these gateways are growing and opening their doors to less experienced scientists or even to the general public as “citizen scientists”, there is an emerging need to extend these gateways with training and learning support capabilities. This paper describes a novel approach showing how science gateways can be extended with embedded e-learning support using an ontology-based learning environment called Knowledge Repository Exchange and Learning (KREL). The paper also presents a prototype implementation of a science gateway for analysing earthquake data and demonstrates how the KREL can extend this gateway with ontology-based embedded e- learning support.
+                                </p> 
+                           </div>
+                    </div>
+                
+                
+                
+                </div>
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td><?php t(2)?>:00&mdash;<?php t(2)?>:10</td>
+        <td>
+            <div class="ui list">
+                <div class="item">
+                    <div class="header">Abstract : Suit Up Your Gateway for Interactive Cyber Training </div>
+                   <b>Lan Zhao</b>, X. Carol Song, Ilya Shunko and Steven Clark.
+                </div>
+            </div>
+        </td>
+    </tr>
+
+     <tr>
+        <td><?php t(2)?>:10&mdash;<?php t(2)?>:20</td>
+        <td>
+            <div class="ui list">
+                <div class="item">
+                    <div class="header">Abstract : User-centred Virtual Research Environment for Data-Driven Research </div>
+                   <b>Xiaofeng Liao</b>, Spiros Koulouzis and Zhiming Zhao.
+                </div>
+            </div>
+        </td>
+    </tr>
+
+
+  <tr style="background-color: rgba(151,211,252,0.23)">
+        <td><?php t(2)?>:20&mdash;<?php t(2)?>:50</td>
+        <td>
+            <div class="ui list">
+                <div class="item">
+                    <div class="header">Sandra Gesing</div>
+                    Structured Discussion: Building Blocks for Training and eLearning in Science Gateways
+                </div>
+            </div>
+        </td>
+    </tr>
+
+ <tr style="background-color: rgba(151,211,252,0.23)">
+        <td><?php t(2)?>:50&mdash;<?php t(3)?>:00</td>
+        <td>
+            <div class="ui list">
+                <div class="item">
+                    <div class="header">Sandra Gesing</div>
+                    Closing Address
+                </div>
+            </div>
+        </td>
+    </tr>
+
+    </tbody>
+</table>
+-->
+
+
+
+<script>
+
+    $(document).ready(function () {
+        $('.ui.accordion')
+            .accordion()
+        ;
+    });
+
+</script>
